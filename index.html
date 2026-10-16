@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="ЛИНИЯ — мебель для дома. Диваны, кресла, столы и хранение. Учебный проект каталога мебели.">
+  <title>ЛИНИЯ — мебель для дома</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="topline"><div class="wrap topline-inner"><span>Мебель для жизни, а не на один сезон</span><span>Бишкек · учебный каталог</span></div></div>
+  <header class="header" id="top">
+    <div class="wrap header-inner">
+      <a href="#top" class="brand" aria-label="ЛИНИЯ, на главную">ЛИНИЯ<span class="brand-mark">.</span></a>
+      <nav class="desktop-nav" aria-label="Основное меню"><a href="#collection">Коллекция</a><a href="#approach">О нас</a><a href="#process">Как заказать</a><a href="#contact">Контакты</a></nav>
+      <a class="header-link" href="#contact">Обсудить заказ <span aria-hidden="true">↗</span></a>
+      <button class="menu-toggle" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="mobileNav"><span></span><span></span></button>
+    </div>
+    <nav class="mobile-nav" id="mobileNav" aria-label="Мобильное меню" hidden><a href="#collection">Коллекция</a><a href="#approach">О нас</a><a href="#process">Как заказать</a><a href="#contact">Контакты</a></nav>
+  </header>
+  <main>
+    <section class="hero wrap" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow">Мебельная компания / Бишкек</p>
+        <h1 id="hero-title">Пространство,<br><em>в котором хорошо.</em></h1>
+        <p class="hero-desc">Удобные диваны, столы и кресла для обычных, важных моментов дома. Ничего лишнего — только то, чем приятно пользоваться каждый день.</p>
+        <div class="hero-actions"><a href="#collection" class="button button-dark">Смотреть коллекцию <span>↗</span></a><a href="#approach" class="underlink">Познакомиться с нами <span>↗</span></a></div>
+        <div class="hero-bottom"><span class="stroke-line"></span><small>Мебель, которая остаётся надолго</small></div>
+      </div>
+      <figure class="hero-visual photo-container">
+        <img src="images/hero.jpg" alt="Светлая гостиная с мягкой мебелью и деревянным столиком" fetchpriority="high">
+        <figcaption>Дом — в деталях. Коллекция 2026</figcaption>
+      </figure>
+    </section>
+
+    <section class="introline wrap"><span>01 / Наша коллекция</span><p>Вещи, вокруг которых складывается дом.</p><span class="intro-rule"></span></section>
+
+    <section id="collection" class="collection wrap" aria-labelledby="collection-title">
+      <div class="section-head"><div><p class="eyebrow">Каталог</p><h2 id="collection-title">Выберите своё</h2></div><p>Простые формы, спокойные цвета и материалы, к которым приятно прикоснуться.</p></div>
+      <div class="filters" aria-label="Фильтры каталога">
+        <button type="button" class="filter active" data-filter="all" aria-pressed="true">Всё <span>06</span></button>
+        <button type="button" class="filter" data-filter="sofa" aria-pressed="false">Диваны</button>
+        <button type="button" class="filter" data-filter="chair" aria-pressed="false">Кресла и стулья</button>
+        <button type="button" class="filter" data-filter="table" aria-pressed="false">Столы</button>
+        <button type="button" class="filter" data-filter="storage" aria-pressed="false">Хранение</button>
+      </div>
+      <div class="product-grid" id="productGrid">
+        <article class="product-card" data-category="sofa" data-title="Диван Санд" data-price="48500" data-description="Трёхместный диван с мягкими подушками. Обивка из фактурной ткани спокойного оттенка. Размер: 210 × 88 × 78 см.">
+          <div class="product-photo photo-container"><img loading="lazy" src="images/sofa.jpg" alt="Диван зелёного оттенка в гостиной"><span class="photo-label">Гостиная</span></div><div class="product-info"><div><h3>Диван «Санд»</h3><p>Трёхместный · ткань</p></div><div class="price">48 500 сом</div></div><button type="button" class="product-more">Подробнее <span>↗</span></button>
+        </article>
+        <article class="product-card" data-category="chair" data-title="Кресло Бук" data-price="18900" data-description="Кресло с лаконичным силуэтом и удобной спинкой. Для зоны отдыха или рабочего уголка. Размер: 72 × 76 × 82 см.">
+          <div class="product-photo photo-container"><img loading="lazy" src="images/chair.jpg" alt="Современное кресло с простым силуэтом"><span class="photo-label">Зона отдыха</span></div><div class="product-info"><div><h3>Кресло «Бук»</h3><p>Мягкое · компактное</p></div><div class="price">18 900 сом</div></div><button type="button" class="product-more">Подробнее <span>↗</span></button>
+        </article>
+        <article class="product-card" data-category="table" data-title="Стол Норд" data-price="26500" data-description="Обеденный стол с устойчивым основанием и широкой столешницей. Подойдёт для кухни и столовой. Размер: 150 × 85 × 75 см.">
+          <div class="product-photo photo-container"><img loading="lazy" src="images/table.jpg" alt="Деревянный стол в светлом интерьере"><span class="photo-label">Столовая</span></div><div class="product-info"><div><h3>Стол «Норд»</h3><p>Дерево · 4–6 мест</p></div><div class="price">26 500 сом</div></div><button type="button" class="product-more">Подробнее <span>↗</span></button>
+        </article>
+        <article class="product-card" data-category="storage" data-title="Стеллаж Арка" data-price="15300" data-description="Открытый стеллаж для книг, посуды и домашних мелочей. Удобен для небольшой комнаты. Размер: 80 × 32 × 174 см.">
+          <div class="product-photo photo-container"><img loading="lazy" src="images/storage.jpg" alt="Книжный стеллаж и домашние предметы"><span class="photo-label">Хранение</span></div><div class="product-info"><div><h3>Стеллаж «Арка»</h3><p>Открытые полки · дерево</p></div><div class="price">15 300 сом</div></div><button type="button" class="product-more">Подробнее <span>↗</span></button>
+        </article>
+        <article class="product-card" data-category="sofa" data-title="Диван Лён" data-price="56900" data-description="Просторный диван для семейных вечеров. Глубокое сиденье и нейтральная обивка. Размер: 230 × 94 × 79 см.">
+          <div class="product-photo photo-container"><img loading="lazy" src="images/living.jpg" alt="Спокойный интерьер гостиной с диваном"><span class="photo-label">Гостиная</span></div><div class="product-info"><div><h3>Диван «Лён»</h3><p>Мягкий · просторный</p></div><div class="price">56 900 сом</div></div><button type="button" class="product-more">Подробнее <span>↗</span></button>
+        </article>
+        <article class="product-card" data-category="table" data-title="Столик Круг" data-price="9800" data-description="Небольшой журнальный столик для чашки кофе, книг и мелочей. Размер: Ø 65 × 42 см.">
+          <div class="product-photo photo-container"><img loading="lazy" src="images/coffee.jpg" alt="Небольшой столик в жилом интерьере"><span class="photo-label">Детали</span></div><div class="product-info"><div><h3>Столик «Круг»</h3><p>Журнальный · компактный</p></div><div class="price">9 800 сом</div></div><button type="button" class="product-more">Подробнее <span>↗</span></button>
+        </article>
+      </div>
+      <p class="catalog-note" id="catalogNote">Цены и ассортимент представлены для учебного проекта и не являются публичной офертой.</p>
+    </section>
+
+    <section id="approach" class="approach" aria-labelledby="approach-title">
+      <div class="wrap approach-grid"><div class="approach-photo photo-container"><img loading="lazy" src="images/detail.jpg" alt="Уютный интерьер спальни в нейтральных оттенках"></div>
+      <div class="approach-copy"><p class="eyebrow">02 / О нас</p><h2 id="approach-title">Чтобы дома хотелось<br><em>остаться подольше.</em></h2><p>«ЛИНИЯ» — учебный проект небольшой мебельной компании в Бишкеке. Мы представили коллекцию базовой мебели, которая не спорит с интерьером и помогает сделать пространство удобнее.</p><p>Нам близки спокойные цвета, прочные материалы и формы, которые не устаревают через сезон.</p><div class="approach-lines"><div><b>01</b><span>Внимание к комфорту</span></div><div><b>02</b><span>Материалы на каждый день</span></div><div><b>03</b><span>Простой выбор без лишнего</span></div></div></div></div>
+    </section>
+
+    <section id="process" class="process wrap"><div class="section-head"><div><p class="eyebrow">03 / Как заказать</p><h2>От идеи до вашего дома</h2></div><p>Понятный процесс без сложных шагов. Доступность и итоговые условия обсуждаются отдельно.</p></div><div class="process-grid"><div><span>01</span><h3>Выберите</h3><p>Найдите предмет мебели в каталоге и ознакомьтесь с размерами.</p></div><div><span>02</span><h3>Уточните детали</h3><p>Оставьте заявку для предварительного обсуждения модели и пожеланий.</p></div><div><span>03</span><h3>Согласуйте</h3><p>Сроки, материалы, стоимость и доставку уточняют перед заказом.</p></div></div></section>
+
+    <section class="contact-outer" id="contact"><div class="wrap contact-grid"><div class="contact-text"><p class="eyebrow">04 / Контакты</p><h2>Есть идея для<br><em>вашего дома?</em></h2><p>Расскажите, что ищете. Заполните небольшую форму — сайт подготовит текст заявки, который можно скопировать и передать магазину.</p><div class="contact-facts"><span>Бишкек, Кыргызстан</span><span>Учебный демонстрационный проект</span></div></div><form id="contactForm" class="contact-form" novalidate><label for="clientName">Как вас зовут?</label><input id="clientName" name="name" type="text" autocomplete="name" placeholder="Ваше имя" required maxlength="60"><label for="clientContact">Как с вами связаться?</label><input id="clientContact" name="contact" type="text" placeholder="Телефон или электронная почта" required maxlength="100"><label for="clientItem">Что вас интересует?</label><select id="clientItem" name="item"><option>Подобрать мебель</option><option>Диван</option><option>Кресло или стул</option><option>Стол</option><option>Стеллаж</option></select><label for="clientMessage">Комментарий <span>(необязательно)</span></label><textarea id="clientMessage" name="message" rows="3" maxlength="400" placeholder="Размеры, цвет, вопросы"></textarea><div class="form-actions"><button class="button button-light" type="submit">Подготовить заявку <span>↗</span></button><small>Это демо-форма. Сообщение не отправляется на сервер.</small></div><div id="formResult" class="form-result" aria-live="polite" hidden><strong>Текст заявки подготовлен</strong><p>Скопируйте текст и отправьте его самостоятельно.</p><pre id="formPreview"></pre><button type="button" id="copyRequest" class="copy-button">Скопировать текст</button></div><p id="formError" class="form-error" role="alert" hidden></p></form></div></section>
+  </main>
+  <footer class="footer"><div class="wrap footer-inner"><div><a href="#top" class="brand">ЛИНИЯ<span class="brand-mark">.</span></a><p>Продуманные вещи для повседневной жизни.</p></div><div class="footer-right"><nav aria-label="Меню в подвале"><a href="#collection">Коллекция</a><a href="#approach">О нас</a><a href="#contact">Контакты</a></nav><p>© 2026 ЛИНИЯ. Учебный проект студента Ибрагимова Эмира, КС-2-24.</p></div></div></footer>
+  <dialog id="productDialog" class="product-dialog" aria-label="Описание товара"><button class="dialog-close" type="button" aria-label="Закрыть">×</button><p class="eyebrow">Коллекция ЛИНИЯ</p><h2 id="dialogTitle"></h2><p id="dialogDescription"></p><div class="dialog-bottom"><strong id="dialogPrice"></strong><a href="#contact" id="dialogContact" class="button button-dark">Уточнить детали ↗</a></div></dialog>
+</body>
+</html>
